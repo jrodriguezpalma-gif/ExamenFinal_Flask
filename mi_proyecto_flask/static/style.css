@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Estilos del Menú Principal */
+.menu-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-menu {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+
+.btn-menu:hover {
+    opacity: 0.8;
+}
+
+.btn-ejercicio1 { background-color: #9c27b0; } /* Color Magenta/Púrpura */
+.btn-ejercicio2 { background-color: #8bc34a; } /* Color Verde */
+
+/* Estilos de Formularios y Contenedores */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #666;
+}
+
+input[type="text"], input[type="number"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos de resultados */
+.resultado {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.resultado p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+}

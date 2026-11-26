@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Inicio de sesión</h1>
+        <form method="POST">
+            <label for="usuario">Ingresa tu nombre</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="contrasena">Ingresa tu contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <button type="submit">Verificar</button>
+        </form>
+
+        {% if mensaje %}
+            <div class="resultado">
+                <p class="{% if 'incorrectos' in mensaje %}error{% endif %}">{{ mensaje }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
